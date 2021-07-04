@@ -4,10 +4,16 @@
   "description": "proyekSOA",
   "main": "index.js",
   "dependencies": {
+    "date-and-time": "^1.0.1",
+    "dateformat": "^4.5.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "morgan": "^1.10.0",
+    "morgan-moment": "^1.7.4",
     "multer": "^1.4.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {

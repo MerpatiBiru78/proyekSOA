@@ -19,9 +19,11 @@ function getConnection() {
     });
 }
 
-function executeQuery(conn, query) {
-    return new Promise(function (resolve, reject) {
+async function executeQuery(query) {
+    return new Promise(async function (resolve, reject) {
+        const conn = await getConnection();
         conn.query(query, function (err, result) {
+            conn.release();
             if (err) {
                 reject(err);
             } else {
