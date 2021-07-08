@@ -6,6 +6,7 @@ const  path = require('path');
 const dateFormat = require("dateformat");
 const jwt = require('jsonwebtoken');
 const multer= require('multer');
+const port = process.env.PORT || 3000;
 // Create multer object
 let id_team;
 const upload = multer({
