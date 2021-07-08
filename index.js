@@ -51,7 +51,9 @@ app.use(morgan("formatku",
 app.use(express.urlencoded({
     extended: true
 }));
-
+app.get("/",function(req,res){
+   return res.status(200).send("bisa");
+});
 // users
 app.post("/api/users", async function (req,res){
     let username;
